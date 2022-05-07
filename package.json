@@ -1,0 +1,27 @@
+{
+  "name": "myweather_project",
+  "version": "1.0.0",
+  "description": "simple weather_app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "my_node_weather_app"
+  },
+  "keywords": [
+    "nodejs",
+    "weather",
+    "vscodium",
+    "linux"
+  ],
+  "author": "aaron schultz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "request": "^2.88.2"
+  }
+}
