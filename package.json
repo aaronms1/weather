@@ -1,5 +1,5 @@
 {
-  "name": "myweather_project",
+  "name": "weather",
   "version": "1.0.0",
   "description": "simple weather_app",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "my_node_weather_app"
+    "url": "Weatherly"
   },
   "keywords": [
     "nodejs",
