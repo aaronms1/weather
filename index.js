@@ -5,7 +5,7 @@ const request = require('request');
 //after this run '$npm instal --save express body-parser request' frpm the terminal
 const app = express();
 // type of app were creating
-const apikey = '82cbe0a888737cffc2615413184243f9';
+const apikey = '';
 // we need to get an api key from the 'openweather' site
 // 'YOU MUST CREATE YOUR OWN APIKEY'...
 app.use(express.static('public'));
