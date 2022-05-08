@@ -26,21 +26,20 @@ app.post('/', function (req, res) {
             res.render('index', { weather: null, error: 'Error, Cpt.Obvius says "somethings wrong"' })
         }
         else {
-            let weather -JSON.parse(body)
+            let weather = JSON.parse(body);
             if (weather.main == undefined) {
                 res.render('index', {
                     weather: null,
                     error: 'Cpt.Obvius is laughing at us. :)'
-                })
+                });
             } else {
-                let weatherText = 'Its ${ weather.main.temp } degress with ${ weather.weather[0].main } in ${ weather.name } !!'
-                res.render('index', {weather: weatherTextext, error: null})
+                let weatherText = 'Its ${ weather.main.temp } degress with ${ weather.weather[0].main } in ${ weather.name } !!';
+                res.render('index', {weather: weatherTextext, error: null});
                 console.log("body:", body);
             }
         }
-    }
-    })
-})
+    });
+});
 
 app.listen(3000, function () {
     console.log("Our simple nodejs express weather app is running on port 3000!");
