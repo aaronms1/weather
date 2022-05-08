@@ -16,10 +16,27 @@
     <div class="container">
         <fieldset>
             <form action="/" method="POST" autocomplete="off">
-                <input name="city" type="text" placeholder="Enter a city" required class="ghost-input" />
-                <input id="submit" type="submit" value="Get Weather" class="ghost-button" />
+                <input
+                 name="city"
+                 type="text"
+                 placeholder="Enter a city"
+                 required
+                 class="ghost-input"
+              />
+                <input
+                id="submit"
+                type="submit"
+                value="Get Weather"
+                class="ghost-button"
+              />
             </form>
-        </fieldset>
+            <!-- this is the ejs template engine -->
+            <% if(weather !== null){%>
+            <p><%= weather %></p>
+            <% } %> <%if(error !== nul){ %>
+            <p><%= error %></p>
+            <% } %>
+          </fieldset>
     </div>
 </body>
 
