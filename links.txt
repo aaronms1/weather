@@ -1,0 +1,14 @@
+https://bulk.openweathermap.org/sample/city.list.json.gz
+https://bulk.openweathermap.org/sample/city.list.min.json.gz
+https://bulk.openweathermap.org/sample/current.city.list.json.gz
+https://bulk.openweathermap.org/sample/current.city.list.min.json.gz
+https://bulk.openweathermap.org/sample/daily_14.json.gz
+https://bulk.openweathermap.org/sample/daily_16.json.gz
+https://bulk.openweathermap.org/sample/history.city.list.json.gz
+https://bulk.openweathermap.org/sample/history.city.list.min.json.gz
+https://bulk.openweathermap.org/sample/history_forecast_bulk_csv.tar.gz
+https://bulk.openweathermap.org/sample/history_forecast_bulk_json.tar.gz
+https://bulk.openweathermap.org/sample/hourly_14.json.gz
+https://bulk.openweathermap.org/sample/hourly_16.json.gz
+https://bulk.openweathermap.org/sample/weather_14.json.gz
+https://bulk.openweathermap.org/sample/weather_16.json.gz
