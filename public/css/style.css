@@ -1,0 +1,42 @@
+-ghost-input, p {
+    display: block;
+    font-weight:300;
+    width: 100%;
+    font-size: 25px;
+    border:0px;
+    outline: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color:  #4b5f545f;
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1 ease-in-out;
+} 
+-ghost-input:focus {
+    border-bottom: solid #ddd;
+}
+-ghost-button {
+    background-color: transparent;
+    border: #ddd;
+    padding: 10px 30px;
+    width: auto;
+    min-width: 350px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1 ease-in-out;
+    color: grey;
+    font-weight: bold;
+}
+-ghost-button:hover {
+    background-color: transparent;
+    border: 2px solid #060deb
+}
