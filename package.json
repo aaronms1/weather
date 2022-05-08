@@ -1,5 +1,5 @@
 {
-  "name": "weather",
+  "name": "my_weather",
   "version": "1.0.0",
   "description": "simple weather_app",
   "main": "index.js",

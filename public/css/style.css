@@ -1,16 +1,55 @@
--ghost-input, p {
+body {
+    width: 800px;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    background: url("../images/weather.jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+fieldset {
     display: block;
-    font-weight:300;
+    -webkit-margin-start: 0px;
+    -webkit-marin-end: 0px;
+    -webkit-padding-before: 0em;
+    -webkit-padding-start: 0em;
+    -webkit-padding-end: 0em;
+    -webkit-padding-after: 0em;
+    border: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    min-width: -webkit-min-content;
+    padding: 30px;
+}
+
+-ghost-input,
+p {
+    display: block;
+    font-weight: 300;
     width: 100%;
     font-size: 25px;
-    border:0px;
+    border: 0px;
     outline: none;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color:  #4b5f545f;
-    font-family:'Courier New', Courier, monospace;
+    color: #4b5f545f;
+    font-family: 'Open Sans', 'opensans', 'monospace';
     padding: 10px 15px;
     margin: 10px 0px;
     -webkit-transition: all 0.1s ease-in-out;
@@ -18,10 +57,12 @@
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1 ease-in-out;
-} 
+}
+
 -ghost-input:focus {
     border-bottom: solid #ddd;
 }
+
 -ghost-button {
     background-color: transparent;
     border: #ddd;
@@ -36,6 +77,7 @@
     color: grey;
     font-weight: bold;
 }
+
 -ghost-button:hover {
     background-color: transparent;
     border: 2px solid #060deb
