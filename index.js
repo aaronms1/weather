@@ -35,6 +35,7 @@ app.post('/', function (req, res) {
             } else {
                 let weatherText = 'Its ${ weather.main.temp } degress with ${ weather.weather[0].main } in ${ weather.name } !!';
                 res.render('index', { weather: weatherTextext, error: null });
+                res.render('index', {weather: weatherTextext, error: null});
                 console.log("body:", body);
             }
         }
