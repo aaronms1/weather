@@ -1,4 +1,3 @@
 # weather
-my first nodejs app
-this nodejs app i created from a simplilearn fullstack tutorial.
+this is a nodejs express app i created that will return weather conditions for a selected city.
 ...more to come
