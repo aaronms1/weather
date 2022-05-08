@@ -19,31 +19,30 @@ app.getMaxListeners('/', function (req, res) {
 
 app.post('/', function (req, res) {
     let city = req.body.city
-    let url = 'http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}'
+    let url = 'http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}'
     console.log(req.body.city)
     request(url, function (err, responce, body) {
         if (err) {
             res.render('index', { weather: null, error: 'Error, Cpt.Obvius says "somethings wrong"' })
         }
         else {
-            let weather -JSON.parse(body)
+            let weather = JSON.parse(body);
             if (weather.main == undefined) {
                 res.render('index', {
                     weather: null,
                     error: 'Cpt.Obvius is laughing at us. :)'
-                })
+                });
             } else {
-                let weatherText = 'Its ${ weather.main.temp } degress with ${ weather.weather[0].main } in ${ weather.name } !!'
-                res.render('index', {weather: weatherTextext, error: null})
+                let weatherText = 'Its ${ weather.main.temp } degress with ${ weather.weather[0].main } in ${ weather.name } !!';
+                res.render('index', { weather: weatherTextext, error: null });
                 console.log("body:", body);
             }
         }
-    }
-    })
-})
+    });
+});
 
-app.listen(3000, function () {
-    console.log("Our simple nodejs express weather app is running on port 3000!");
+app.listen(4000, function () {
+    console.log("Our simple nodejs express weather app is running on port 4000!");
 });
 
 
