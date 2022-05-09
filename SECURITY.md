@@ -13,7 +13,12 @@ currently being supported with security updates.
 | < 4.0   | :x:                |
 
 ## Reporting a Vulnerability
-just send a pull req with proof (full report!! i use 'cherryTree') of the vuln.-
- how and ware you found it, and who you are TY in advance
-## IF YOU DO NOT PROVIDE ALL ABOVE INFO IN A FORMAT THAT IS NOT 'CHERRYTREE COMPATALE'
+- just CREATE AN ISSUE with proof (FULL REPORT!! i use 'cherryTree') of the vuln.
+- how and ware you found it,
+- what OS you use
+- what platform your trying to use it on
+- and who you are TY in advance
+- @bloomtech students are allways welcome :)
+ 
+## IF YOU DO NOT PROVIDE ALL ABOVE INFO IN A FORMAT THAT IS 'CHERRYTREE COMPATABLE'
 ## ( XML, JSON ) I WILL IGNORE AND DELETE IT !!!
