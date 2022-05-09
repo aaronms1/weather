@@ -35,7 +35,8 @@ app.getMaxListeners("/", function (req, res) {
 
 app.post('/', function (req, res) {
     let city = req.body.city
-    let url = "https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}"
+    let url = "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}" 
+    //"https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}"
     console.log(req.body.city)
     request(url, function (err, responce, body) {
         if (err) {
