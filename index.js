@@ -8,6 +8,7 @@ const http = require("http");
 // also installed via the CL,nodemon --save-dev. this refreshes the app every-
 // time we make a change and save..
 const app = express();
+<<<<<<< HEAD
 // type of app were creating...
 app.set("view engine", "ejs");
 // setting veiw engine to ejs...
@@ -19,6 +20,13 @@ const apikey = "";
 // we need to get an api key from 'Https://openweathermap.org'
 // 'YOU MUST CREATE YOUR OWN APIKEY FOR THIS APP TO WORK ON YOUR BOX'...
 app.use(express.static(__dirname + "/public"));
+=======
+// type of app were creating
+const apikey = '';
+// we need to get an api key from the 'openweather' site
+// 'YOU MUST CREATE YOUR OWN APIKEY'...
+app.use(express.static('public'));
+>>>>>>> d8ffd3c576d075f7efdf386d76ad540ff2f554f0
 app.use(bodyParser.urlencoded({ extended: true }));
 // body-parser allows us to import encoded urls
 app.getMaxListeners("/", function (req, res) {
