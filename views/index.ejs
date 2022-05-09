@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- tells the browse that this is a html doc. in english-->
 
 <head>
   <meta charset="UTF-8" />
@@ -8,6 +9,7 @@
   <link rel='stylesheet' type="text/css" href="/css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css" />
 </head>
+<!-- our head block,...ty Cpt.Obvius -->
 
 <body>
   <div class="container">
@@ -16,11 +18,12 @@
         <input name="city" type="text" placeholder="Enter a city" required class="ghost-input" />
         <input id="submit" type="submit" value="Get Weather" class="ghost-button" />
       </form>
-      <!-- this is the ejs template engine -->
+      <!-- (above) is whats going on inside our container,
+        (bellow) is our "ejs" template engine -->
       <p>
         <%=weather %>
       </p>
-      <% if( weather==null){%>
+      <% if(weather==null){%>
         <% } %>
           <% if(error==null){ %>
             <p>
