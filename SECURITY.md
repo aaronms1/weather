@@ -13,9 +13,7 @@ currently being supported with security updates.
 | < 4.0   | :x:                |
 
 ## Reporting a Vulnerability
-
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+just send a pull req with proof (full report!! i use 'cherryTree') of the vuln.-
+ how and ware you found it, and who you are TY in advance
+## IF YOU DO NOT PROVIDE ALL ABOVE INFO IN A FORMAT THAT IS NOT 'CHERRYTREE COMPATALE'
+## ( XML, JSON ) I WILL IGNORE AND DELETE IT !!!
