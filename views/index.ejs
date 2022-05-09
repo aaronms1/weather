@@ -2,42 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my_weather</title>
-    <link rel='stylesheet' type="text/css" href="/css/style.css" />
-    <link
-     href="https://fonts.googleapis.com/css?family=Open+Sans:300"
-      rel="stylesheet"
-       type="text/css"
-    />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weather</title>
+  <link rel='stylesheet' type="text/css" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <div class="container">
-        <fieldset>
-            <form action="/" method="POST" autocomplete="off">
-                <input
-                 name="city"
-                 type="text"
-                 placeholder="Enter a city"
-                 required
-                 class="ghost-input"
-              />
-                <input
-                id="submit"
-                type="submit"
-                value="Get Weather"
-                class="ghost-button"
-              />
-            </form>
-            <!-- this is the ejs template engine -->
-            <% if(weather !== null){%>
-            <p><%= weather %></p>
-            <% } %> <%if(error !== nul){ %>
-            <p><%= error %></p>
+  <div class="container">
+    <fieldset>
+      <form action="/" method="POST" autocomplete="off">
+        <input name="city" type="text" placeholder="Enter a city" required class="ghost-input" />
+        <input id="submit" type="submit" value="Get Weather" class="ghost-button" />
+      </form>
+      <!-- this is the ejs template engine -->
+      <p>
+        <%=weather %>
+      </p>
+      <% if( weather==null){%>
+        <% } %>
+          <% if(error==null){ %>
+            <p>
+              <%= error %>
+            </p>
             <% } %>
-          </fieldset>
-    </div>
+    </fieldset>
+  </div>
 </body>
 
 </html>

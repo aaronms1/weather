@@ -14,13 +14,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.7;
-    background-color: darkgray;
+    background-color: lightgray;
     border-radius: 10px;
 }
 
 fieldset {
     display: block;
-    -webkit-margin-start: 0px;
     -webkit-marin-end: 0px;
     -webkit-padding-before: 0em;
     -webkit-padding-start: 0em;
@@ -33,7 +32,7 @@ fieldset {
     border-image-outset: initial;
     border-image-repeat: initial;
     min-width: -webkit-min-content;
-    padding: 30px;
+    padding: 60px;
 }
 
 -ghost-input,
@@ -52,11 +51,11 @@ p {
     font-family: 'Open Sans', 'opensans', 'monospace';
     padding: 10px 15px;
     margin: 10px 0px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1 ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 -ghost-input:focus {
@@ -65,7 +64,7 @@ p {
 
 -ghost-button {
     background-color: transparent;
-    border: #ddd;
+    border: rgba(7, 204, 239, 0.821);
     padding: 10px 30px;
     width: auto;
     min-width: 350px;
@@ -74,11 +73,11 @@ p {
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1 ease-in-out;
-    color: grey;
+    color: rgb(73, 72, 72);
     font-weight: bold;
 }
 
 -ghost-button:hover {
-    background-color: transparent;
-    border: 2px solid #060deb
+    background-color: crimson;
+    border: 10px solid #06cdeb
 }
