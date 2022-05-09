@@ -21,13 +21,19 @@
       <!-- (above) is whats going on inside our container,
         (bellow) is our "ejs" template engine -->
       <p>
-        <%=weather %>
+           <% if(locals.weather !==null){ %>
+          <p>
+            <%= locals.weather %>
+          </p>
+          <% } %>
+
+            <% if(locals.error !==null){ %>
+              <p>
+                <%= locals.error %>
+              </p>
       </p>
-      <% if(weather==null){%>
-        <% } %>
-          <% if(error==null){ %>
-            <p>
-              <%= error %>
+
+      
             </p>
             <% } %>
     </fieldset>
